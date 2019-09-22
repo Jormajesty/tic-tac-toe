@@ -1,7 +1,7 @@
 import React from 'react'
-import Game from './game'
+import Square from './square'
 import {shallow} from 'enzyme'
 
 it('should render without breaking', () => {
-		shallow(<Game/>);
+		shallow(<Square/>);
 });
