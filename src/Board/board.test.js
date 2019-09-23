@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow, configure } from "enzyme";
+import { shallow, configure, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Board from "./Board";
 
@@ -29,5 +29,8 @@ describe("when rendering the board", () => {
   });
   it("should render all the squares for the board", () => {
     expect(board.find(".boardSquare").exists()).toBeTruthy();
+  });
+   it("initializes the state with X's turn to play to true", () => {
+    expect(board.state().xTurnToPlay).toEqual(true);
   });
 });
