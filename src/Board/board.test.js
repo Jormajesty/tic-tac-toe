@@ -28,6 +28,6 @@ describe("when rendering the board", () => {
 	expect(board.find(".board-row").length).toEqual(3);
   });
   it("should render all the squares for the board", () => {
-    expect(board.find(".squareDiv").exists()).toBeTruthy();
+    expect(board.find(".boardSquare").exists()).toBeTruthy();
   });
 });

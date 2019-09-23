@@ -7,18 +7,28 @@ class Board extends React.Component {
 	    this.state = {
 	      squares: Array(9).fill(null)
 	    }
-	  }
-	render() {
+	  };
+	renderSquare(i) {
+	    return (
+	    	<Square value={i} className="boardSquare"/>
+	  	)}
+	render(){
 	    return (
 		 <div className="board"> 
 		    <div className="board-row">
-	          1
+	          {this.renderSquare(0)}
+	          {this.renderSquare(1)}
+	          {this.renderSquare(2)}
 	        </div>
 	        <div className="board-row">
-	          2
+	          {this.renderSquare(0)}
+	          {this.renderSquare(1)}
+	          {this.renderSquare(2)}
 	        </div>
 	        <div className="board-row">
-	          3
+	          {this.renderSquare(0)}
+	          {this.renderSquare(1)}
+	          {this.renderSquare(2)}
 	        </div>
 	      </div>
 	    );
