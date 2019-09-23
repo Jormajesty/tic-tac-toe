@@ -27,4 +27,7 @@ describe("when rendering the board", () => {
   it("the board should contain 3 rows", () => {
 	expect(board.find(".board-row").length).toEqual(3);
   });
+  it("should render all the squares for the board", () => {
+    expect(board.find(".squareDiv").exists()).toBeTruthy();
+  });
 });
