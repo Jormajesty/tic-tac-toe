@@ -24,4 +24,7 @@ describe("when rendering the board", () => {
       null
     ]);
   });
+  it("the board should contain 3 rows", () => {
+	expect(board.find(".board-row").length).toEqual(3);
+  });
 });

@@ -9,7 +9,19 @@ class Board extends React.Component {
 	    }
 	  }
 	render() {
-	    return <div className="board">testtesttest</div>;
+	    return (
+		 <div className="board"> 
+		    <div className="board-row">
+	          1
+	        </div>
+	        <div className="board-row">
+	          2
+	        </div>
+	        <div className="board-row">
+	          3
+	        </div>
+	      </div>
+	    );
 	  }
-}
+	}
 export default Board;
