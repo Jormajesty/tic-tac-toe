@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when rendering the app renders Board correctly 1`] = `ShallowWrapper {}`;
+
+exports[`when rendering the board renders Board correctly 1`] = `ShallowWrapper {}`;

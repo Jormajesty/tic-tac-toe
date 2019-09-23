@@ -1,6 +1,9 @@
 import React from 'react'
 import Square from '../Square/square'
 
-export default class Board extends React.Component {
-
+class Board extends React.Component {
+	render() {
+	    return <div className="board">testtesttest</div>;
+	  }
 }
+export default Board;
