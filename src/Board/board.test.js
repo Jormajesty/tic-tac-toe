@@ -11,4 +11,17 @@ describe("when rendering the board", () => {
   it("renders Board correctly", () => {
     expect(board).toMatchSnapshot();
   });
+  it("Board square setUp", () => {
+    expect(board.state().squares).toEqual([
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]);
+  });
 });
