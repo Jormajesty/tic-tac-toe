@@ -15,4 +15,7 @@ describe("when rendering the game", () => {
   it("Has the Board component", () => {
     expect(game.find(".boardComp").exists()).toBeTruthy();
   });
+  it("contains the TicTacToe Header", () => {
+    expect(app.find(".tictactoeHeader").exists()).toBeTruthy();
+  });
 });
