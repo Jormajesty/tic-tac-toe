@@ -1,5 +1,8 @@
-import React from 'react';
+import React from "react";
+import ReactDOM from "react-dom";
 
-export default class Square extends React.Component {
-  
-}
+const Square = props => {
+  return <div className="squareDiv" />;
+};
+
+export default Square;
