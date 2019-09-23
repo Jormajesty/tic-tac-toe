@@ -16,6 +16,6 @@ describe("when rendering the game", () => {
     expect(game.find(".boardComp").exists()).toBeTruthy();
   });
   it("contains the TicTacToe Header", () => {
-    expect(app.find(".tictactoeHeader").exists()).toBeTruthy();
+    expect(game.find(".tictactoeHeader").exists()).toBeTruthy();
   });
 });
