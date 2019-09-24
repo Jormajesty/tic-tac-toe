@@ -15,5 +15,8 @@ describe("when rendering the game", () => {
    		const gameTitle = shallow(<Game />);
 		expect(gameTitle.exists('.ticTacToeHeader')).to.equal(true);
   });
+  it("Should Render board", () => {
+		expect(game.exists('<Board/>')).to.equal(true);
+  });
 
 });
