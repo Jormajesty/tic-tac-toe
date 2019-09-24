@@ -7,9 +7,9 @@ import Game from "./game";
 import Board from "../Board/board";
 
 const game = shallow(<Game/>);
+const board = shallow(<Board/>);
 
-
-describe("when rendering the game", () => {
+describe("Game component", () => {
   it("Should Render Game Component", () => {
    		shallow(<Game/>);
   });
@@ -18,23 +18,10 @@ describe("when rendering the game", () => {
 		expect(gameTitle.exists('.ticTacToeHeader')).to.equal(true);
   });
   it("Should Render board", () => {
-		expect(game.contains(<Board/>)).to.equal(true);
+		expect(game.exists('.boardComp')).to.equal(true);
   });
   it("Board should have three rows", () => {
 		expect(game.find(Board).dive().find('.board-row')).to.have.lengthOf(3);
-  });
-  it("Board should have nine squares", () => {
-		expect(game.state().squares).toEqual([
-	      null,
-	      null,
-	      null,
-	      null,
-	      null,
-	      null,
-	      null,
-	      null,
-	      null
-	    ]);
   });
 
 });

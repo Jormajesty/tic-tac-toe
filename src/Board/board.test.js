@@ -7,6 +7,10 @@ configure({ adapter: new Adapter() });
 
 const board = shallow(<Board />);
 
-describe("when rendering the board", () => {
+describe("Board component", () => {
+	it('renders without crashing', () => {
+	  let squares = Array(9).fill(null)
+	  shallow(<Board squares={squares}/>);
+	});
 
 });

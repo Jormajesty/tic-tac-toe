@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class Square extends React.Component {
-	}
-
+function Square(props) {
+  return (
+    <button className="square">
+      {props.value}
+    </button>
+  );
+}
 export default Square;
