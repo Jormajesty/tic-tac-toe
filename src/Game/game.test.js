@@ -23,5 +23,18 @@ describe("when rendering the game", () => {
   it("Board should have three rows", () => {
 		expect(game.find(Board).dive().find('.board-row')).to.have.lengthOf(3);
   });
+  it("Board should have nine squares", () => {
+		expect(game.state().squares).toEqual([
+	      null,
+	      null,
+	      null,
+	      null,
+	      null,
+	      null,
+	      null,
+	      null,
+	      null
+	    ]);
+  });
 
 });
