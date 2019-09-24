@@ -1,5 +1,6 @@
   
 import React from "react";
+import { expect } from 'chai';
 import chai from 'chai-enzyme';
 import { shallow, mount, render } from 'enzyme';
 import Game from "./game";
@@ -12,7 +13,7 @@ describe("when rendering the game", () => {
   });
   it("Should Render tic tac toe title", () => {
    		const gameTitle = shallow(<Game />);
-		expect(gameTitle.contains('.ticTacToeHeader')).toEqual(false);
+		expect(gameTitle.exists('.ticTacToeHeader')).to.equal(true);
   });
 
 });
