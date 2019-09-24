@@ -9,13 +9,5 @@ configure({ adapter: new Adapter() });
 const game = shallow(<Game />);
 
 describe("when rendering the game", () => {
-  it("game renders correctly", () => {
-    expect(game).toMatchSnapshot();
-  });
-  it("Has the Board component", () => {
-    expect(game.find(".boardComp").exists()).toBeTruthy();
-  });
-  it("contains the TicTacToe Header", () => {
-    expect(game.find(".tictactoeHeader").exists()).toBeTruthy();
-  });
+
 });

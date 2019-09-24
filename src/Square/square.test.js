@@ -8,7 +8,5 @@ configure({ adapter: new Adapter() });
 const square = shallow(<Square />);
 
 describe("when rendering the Square", () => {
-  it("should render the square div", () => {
-    expect(square.find(".squareDiv").exists()).toBeTruthy();
-  });
+
 });
