@@ -9,5 +9,7 @@ configure({ adapter: new Adapter() });
 const game = shallow(<Game />);
 
 describe("when rendering the game", () => {
-
+  it("Should Render Game Component", () => {
+    expect(game).toMatchSnapshot();
+  });
 });

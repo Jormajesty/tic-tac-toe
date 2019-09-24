@@ -3,7 +3,7 @@ import Board from "../Board/board";
 
 class Game extends Component {
   render() {
-    return()
+    return ();
   }
 }
 
