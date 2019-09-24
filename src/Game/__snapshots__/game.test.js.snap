@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`when rendering the game Should Render Game Component 1`] = `ShallowWrapper {}`;
+
 exports[`when rendering the game game renders correctly 1`] = `ShallowWrapper {}`;
