@@ -20,5 +20,8 @@ describe("when rendering the game", () => {
   it("Should Render board", () => {
 		expect(game.contains(<Board/>)).to.equal(true);
   });
+  it("Board should have three rows", () => {
+		expect(game.find(Board).dive().find('.board-row')).to.have.lengthOf(3);
+  });
 
 });
