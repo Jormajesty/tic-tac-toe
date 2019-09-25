@@ -25,6 +25,6 @@ describe("Board component", () => {
 		const onClick = jest.fn();
 		let boardInit = mount(<Board squares={squares} onClick={onClick}/>);
 		let playerHeader = boardInit.find('h2').first();
-		expect(playerHeader.text()).to.equal('Player X is up');
+		expect(playerHeader.text()).to.equal('Player X is up!');
   	});	
 });
