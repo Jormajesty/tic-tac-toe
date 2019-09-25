@@ -7,8 +7,6 @@ import Square from "../Square/square";
 
 configure({ adapter: new Adapter() });
 
-const board = shallow(<Board />);
-
 describe("Board component", () => {
 	it('renders without crashing', () => {
 	  let squares = Array(9).fill(null);
@@ -21,6 +19,12 @@ describe("Board component", () => {
 		let button = boardClick.find('button').first();
 		button.simulate('click');
 		expect(button.text()).to.equal('X');
-  });
-	
+  	});
+	it("Should prompt player 'X' should go first", () => {
+		let squares = Array(9).fill(null);
+		const onClick = jest.fn();
+		let boardInit = mount(<Board squares={squares} onClick={onClick}/>);
+		let playerHeader = boardInit.find('h2').first();
+		expect(playerHeader.text()).to.equal('Player X is up');
+  	});	
 });
