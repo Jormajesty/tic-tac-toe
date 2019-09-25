@@ -17,11 +17,11 @@ ol, ul {
   margin-bottom: 10px;
 }
 
-.squareDiv {
-  background: #fff;
-  border: 1px solid #999;
+.square {
+  border: 1px solid #ffe6e6;
   float: left;
   font-size: 24px;
+  color: #ffe6e6;
   font-weight: bold;
   line-height: 34px;
   height: 34px;
@@ -32,11 +32,17 @@ ol, ul {
   width: 34px;
 }
 
-.squareDiv:focus {
+.square:nth-child(odd) {
+   background: #660000;
+ }
+ .square:nth-child(even) {
+   background: #330000;
+ }
+.square:focus {
   outline: none;
 }
 
-.kbd-navigation .squareDiv:focus {
+.kbd-navigation .square:focus {
   background: #ddd;
 }
 
