@@ -28,8 +28,10 @@ renderSquare(i) {
     );
   }
 	render() {
+		let status = "Player " + (this.state.xIsNext ? "X" : "O") + " is up!";
 	    return (
 	      <div>
+	      <h2>{status}</h2>
 	        <div className="board-row">
 		      {this.renderSquare(0)}
 	          {this.renderSquare(1)}
