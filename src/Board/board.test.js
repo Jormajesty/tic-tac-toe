@@ -27,4 +27,25 @@ describe("Board component", () => {
 		let playerHeader = boardInit.find('h2').first();
 		expect(playerHeader.text()).to.equal('Player X is up!');
   	});	
+  	it('Should determines a winner ', () => {
+		  const boardWinner = mount(<Board squares={squares} onClick={onClick}/>);
+
+		  const button = boardWinner.find('button.square').first()
+		  button.simulate('click')
+
+		  //player 2
+		  const turn2 = boardWinner.find('button').at(1)
+		  turn2.simulate('click')
+		  //player 1
+		  const turn3 = boardWinner.find('button').at(4)
+		  turn3.simulate('click')
+		  //player 2
+		  const turn4 = boardWinner.find('button').at(5)
+		  turn4.simulate('click')
+		  //player 1
+		  const turn5 = boardWinner.find('button').at(8)
+		  turn5.simulate('click')
+		  const winner = boardWinner.find('.gameWinner').children().first().text()
+		  expect(winner).to.equal('Winner: X')
+	});
 });
